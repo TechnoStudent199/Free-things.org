@@ -1,0 +1,46 @@
+Login Page:
+Description: A single login page for both admins and regular users to log in using their username and password.
+Fields:
+Username
+Password
+Features:
+After successful authentication, redirect users based on their role:
+Admins should be redirected to the Admin Panel.
+Regular users should be redirected to their User Dashboard.
+Display error messages for invalid credentials.
+2. Admin Panel:
+Access: Only accessible to users with the admin role.
+Features:
+Link Management: Admins can add, edit, or delete important website links and their descriptions.
+Message Management: Admins can send messages to users and view incoming messages.
+User Management: Admins can view, delete, or update user details (such as username).
+Interface Design: The admin interface should be clean and intuitive to ensure ease of use.
+3. User Dashboard:
+Access: Accessible only to regular users.
+Features:
+Display a list of important links (managed by the admin).
+Messaging System: Users should be able to send and receive messages from the admin or other users.
+Profile Management: Users can edit their personal profile details (such as username and password).
+Inbox/Outbox: Include a user-friendly inbox/outbox for managing personal messages.
+Notifications: Display notifications for new messages.
+4. Message System:
+Features:
+Both admins and users should be able to send and receive messages.
+Include an inbox and outbox for users to view sent/received messages.
+Allow users to reply to messages and view full conversation threads.
+Include notifications for new incoming messages.
+5. Backend Implementation:
+Backend Framework: Use a modern web framework such as Django, Flask, or Node.js to implement the logic.
+Database: Use a relational database (such as MySQL or PostgreSQL) to store user details, links, messages, and roles.
+Role-Based Access Control (RBAC):
+Ensure that only admins can access the admin panel and only regular users can access the user dashboard.
+Implement secure authentication (via sessions or JWT) to prevent unauthorized access.
+6. User Accounts:
+Create 25 user accounts with randomly generated usernames and passwords.
+Example: user1, user2, etc.
+Passwords should be securely generated (e.g., password123!, random456$, etc.).
+Use a password generator for security and randomness.
+7. Responsive Design:
+Ensure that the website is fully responsive, adapting to both desktop and mobile views.
+Login page, admin panel, and user dashboard should be user-friendly with modern designs.
+Use CSS media queries or a responsive framework (e.g., Bootstrap) to ensure a good user experience across devices.
